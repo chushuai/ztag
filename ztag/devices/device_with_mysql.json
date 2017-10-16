@@ -1,0 +1,10 @@
+{
+    "3306": {
+        "mysql": {
+	    "banner": {
+            	"banners": true
+	   }
+        }
+    }
+}
+
