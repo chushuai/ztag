@@ -33,6 +33,8 @@ PROTOCOLS = [
     (protocols.S7, protocols.S7.SZL, {"device_with_s7": {"tags":["s7",]}}),
     (protocols.CWMP, protocols.CWMP.GET, {"device_with_cwmp": {"tags":["cwmp",]}}),
     (protocols.SMB, protocols.SMB.BANNER, {"device_with_smb": {"tags":["smb",]}}),
+#add by cy
+    (protocols.MYSQL, protocols.MYSQL.BANNER, {"device_with_mysql": {"tags":["mysql",]}}),
 ]
 
 for proto, subproto, tests in PROTOCOLS:
