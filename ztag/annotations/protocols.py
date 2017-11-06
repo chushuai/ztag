@@ -4,19 +4,15 @@ from ztag.annotation import Annotation
 
 from ztag import protocols
 
-SCADA_PROTOCOLS = set(["dnp", "modbus", "bacnet", "fox", "dnp3", "s7"])
-
 def __process(self, obj, meta):
     meta.tags.add(self.protocol.pretty_name)
-    if self.protocol.pretty_name in SCADA_PROTOCOLS:
-        meta.tags.add("scada")
     return meta
 
 PROTOCOLS = [
     (protocols.HTTP, protocols.HTTP.GET, {"device_with_http":{"tags":["http",]}}),
     (protocols.FTP, protocols.FTP.BANNER, {"device_with_ftp":{"tags":["ftp",]}}),
     (protocols.HTTPS, protocols.HTTPS.TLS, {"device_with_https":{"tags":["https",]}}),
-    (protocols.DNS, protocols.DNS.LOOKUP, {"device_with_dns":{"tags":["dns",]}}),
+    (protocols.DNS, protocols.DNS.OPEN_RESOLVER, {"device_with_dns":{"tags":["dns",]}}),
     (protocols.UPNP, protocols.UPNP.DISCOVERY, {"device_with_upnp":{"tags":["upnp",]}}),
     (protocols.SSH, protocols.SSH.V2, {"device_with_ssh":{"tags":["ssh",]}}),
     (protocols.TELNET, protocols.TELNET.BANNER, {"device_with_telnet":{"tags":["telnet",]}}),
@@ -33,9 +29,12 @@ PROTOCOLS = [
     (protocols.S7, protocols.S7.SZL, {"device_with_s7": {"tags":["s7",]}}),
     (protocols.CWMP, protocols.CWMP.GET, {"device_with_cwmp": {"tags":["cwmp",]}}),
     (protocols.SMB, protocols.SMB.BANNER, {"device_with_smb": {"tags":["smb",]}}),
-#add by cy
+    
+    #add by cy
     (protocols.MYSQL, protocols.MYSQL.BANNER, {"device_with_mysql": {"tags":["mysql",]}}),
-]
+    (protocols.REDIS, protocols.REDIS.BANNER, {"device_with_redis": {"tags":["redis",]}}),
+    
+] 
 
 for proto, subproto, tests in PROTOCOLS:
     name = "%sAnnotation" % proto.pretty_name.upper()

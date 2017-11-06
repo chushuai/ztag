@@ -1,0 +1,9 @@
+{
+    "6379": {
+        "redis": {
+	    "banner": {
+            	"banners": true
+	   }
+        }
+    }
+}

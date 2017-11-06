@@ -36,3 +36,4 @@ from dnp3 import DNP3Transform
 from sslv2 import SSLv2Transform
 from smb import SMBTransform
 from mysql import MYSQLTransform
+from redis import RedisTransform
