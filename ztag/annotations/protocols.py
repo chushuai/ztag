@@ -36,6 +36,7 @@ PROTOCOLS = [
     (protocols.MONGODB, protocols.MONGODB.BANNER, {"device_with_redis": {"tags":["mongodb",]}}),
     (protocols.CODESYS, protocols.CODESYS.BANNER, {"device_with_redis": {"tags":["codesys",]}}),
     (protocols.RDP, protocols.RDP.BANNER, {"device_with_redis": {"tags":["rdp",]}}),
+    (protocols.AMQP, protocols.AMQP.BANNER, {"device_with_redis": {"tags":["amqp",]}}),
     
 ] 
 
