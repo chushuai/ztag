@@ -46,3 +46,4 @@ from riak import  RiakTransform
 from ike import IkeTransform
 from pcworx import PcworxTransform
 from omron import OmronTransform
+from ethernetip import EthernetipTransform

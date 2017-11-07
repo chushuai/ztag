@@ -41,6 +41,7 @@ PROTOCOLS = [
     (protocols.IKE, protocols.IKE.BANNER, {"device_with_redis": {"tags":["ike",]}}),
     (protocols.PCWORX, protocols.PCWORX.BANNER, {"device_with_redis": {"tags":["pcworx",]}}),
     (protocols.OMRON, protocols.OMRON.BANNER, {"device_with_redis": {"tags":["omron",]}}),
+    (protocols.ETHERNETIP, protocols.ETHERNETIP.BANNER, {"device_with_redis": {"tags":["ethernetip",]}}),
     
 ] 
 
