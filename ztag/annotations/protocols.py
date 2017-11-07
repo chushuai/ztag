@@ -39,7 +39,8 @@ PROTOCOLS = [
     (protocols.AMQP, protocols.AMQP.BANNER, {"device_with_redis": {"tags":["amqp",]}}),
     (protocols.RIAK, protocols.RIAK.BANNER, {"device_with_redis": {"tags":["riak",]}}),
     (protocols.IKE, protocols.IKE.BANNER, {"device_with_redis": {"tags":["ike",]}}),
-    (protocols.PCWORX, protocols.IKE.BANNER, {"device_with_redis": {"tags":["pcworx",]}}),
+    (protocols.PCWORX, protocols.PCWORX.BANNER, {"device_with_redis": {"tags":["pcworx",]}}),
+    (protocols.OMRON, protocols.OMRON.BANNER, {"device_with_redis": {"tags":["omron",]}}),
     
 ] 
 

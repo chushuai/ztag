@@ -45,3 +45,4 @@ from amqp import AMQPTransform
 from riak import  RiakTransform
 from ike import IkeTransform
 from pcworx import PcworxTransform
+from omron import OmronTransform
