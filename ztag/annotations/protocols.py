@@ -38,6 +38,7 @@ PROTOCOLS = [
     (protocols.RDP, protocols.RDP.BANNER, {"device_with_redis": {"tags":["rdp",]}}),
     (protocols.AMQP, protocols.AMQP.BANNER, {"device_with_redis": {"tags":["amqp",]}}),
     (protocols.RIAK, protocols.RIAK.BANNER, {"device_with_redis": {"tags":["riak",]}}),
+    (protocols.IKE, protocols.IKE.BANNER, {"device_with_redis": {"tags":["ike",]}}),
 
     
 ] 
