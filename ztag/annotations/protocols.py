@@ -35,6 +35,9 @@ PROTOCOLS = [
     (protocols.REDIS, protocols.REDIS.BANNER, {"device_with_redis": {"tags":["redis",]}}),
     (protocols.MEMCACHE, protocols.MEMCACHE.BANNER, {"device_with_redis": {"tags":["memcache",]}}),
     (protocols.MONGODB, protocols.MONGODB.BANNER, {"device_with_redis": {"tags":["mongodb",]}}),
+    (protocols.CODESYS, protocols.CODESYS.BANNER, {"device_with_redis": {"tags":["codesys",]}}),
+    
+    
     
 ] 
 
