@@ -29,15 +29,13 @@ PROTOCOLS = [
     (protocols.S7, protocols.S7.SZL, {"device_with_s7": {"tags":["s7",]}}),
     (protocols.CWMP, protocols.CWMP.GET, {"device_with_cwmp": {"tags":["cwmp",]}}),
     (protocols.SMB, protocols.SMB.BANNER, {"device_with_smb": {"tags":["smb",]}}),
-    
     #add by cy
     (protocols.MYSQL, protocols.MYSQL.BANNER, {"device_with_mysql": {"tags":["mysql",]}}),
     (protocols.REDIS, protocols.REDIS.BANNER, {"device_with_redis": {"tags":["redis",]}}),
     (protocols.MEMCACHE, protocols.MEMCACHE.BANNER, {"device_with_redis": {"tags":["memcache",]}}),
     (protocols.MONGODB, protocols.MONGODB.BANNER, {"device_with_redis": {"tags":["mongodb",]}}),
     (protocols.CODESYS, protocols.CODESYS.BANNER, {"device_with_redis": {"tags":["codesys",]}}),
-    
-    
+    (protocols.RDP, protocols.RDP.BANNER, {"device_with_redis": {"tags":["rdp",]}}),
     
 ] 
 
