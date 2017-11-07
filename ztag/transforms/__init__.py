@@ -42,3 +42,4 @@ from mongodb import  MongodbTransform
 from codesys import CodesysTransform
 from rdp import RDPTransform
 from amqp import AMQPTransform
+from riak import  RiakTransform
