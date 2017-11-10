@@ -44,6 +44,7 @@ PROTOCOLS = [
     (protocols.ETHERNETIP, protocols.ETHERNETIP.BANNER, {"device_with_ethernetip": {"tags":["ethernetip",]}}),
     (protocols.PGSQL, protocols.PGSQL.BANNER, {"device_with_pgsql": {"tags":["pgsql",]}}),
     (protocols.MELSECQ, protocols.MELSECQ.BANNER, {"device_with_melsecq": {"tags":["melsecq",]}}),
+    (protocols.PROCONOS, protocols.PROCONOS.BANNER, {"device_with_proconos": {"tags":["proconos",]}}),
 ] 
 
 for proto, subproto, tests in PROTOCOLS:

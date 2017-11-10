@@ -35,6 +35,7 @@ from fox import NiagaraFoxTransform
 from dnp3 import DNP3Transform
 from sslv2 import SSLv2Transform
 from smb import SMBTransform
+
 from mysql import MYSQLTransform
 from redis import RedisTransform
 from memcache import MemcacheTransform
@@ -49,3 +50,5 @@ from omron import OmronTransform
 from ethernetip import EthernetipTransform
 from pgsql import PGSQLTransform
 from melsecq import  MELSECQTransform
+from proconos import  PROCONOSTransform
+
