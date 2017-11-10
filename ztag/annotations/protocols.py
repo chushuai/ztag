@@ -32,17 +32,17 @@ PROTOCOLS = [
     #add by cy
     (protocols.MYSQL, protocols.MYSQL.BANNER, {"device_with_mysql": {"tags":["mysql",]}}),
     (protocols.REDIS, protocols.REDIS.BANNER, {"device_with_redis": {"tags":["redis",]}}),
-    (protocols.MEMCACHE, protocols.MEMCACHE.BANNER, {"device_with_redis": {"tags":["memcache",]}}),
-    (protocols.MONGODB, protocols.MONGODB.BANNER, {"device_with_redis": {"tags":["mongodb",]}}),
-    (protocols.CODESYS, protocols.CODESYS.BANNER, {"device_with_redis": {"tags":["codesys",]}}),
-    (protocols.RDP, protocols.RDP.BANNER, {"device_with_redis": {"tags":["rdp",]}}),
-    (protocols.AMQP, protocols.AMQP.BANNER, {"device_with_redis": {"tags":["amqp",]}}),
-    (protocols.RIAK, protocols.RIAK.BANNER, {"device_with_redis": {"tags":["riak",]}}),
-    (protocols.IKE, protocols.IKE.BANNER, {"device_with_redis": {"tags":["ike",]}}),
-    (protocols.PCWORX, protocols.PCWORX.BANNER, {"device_with_redis": {"tags":["pcworx",]}}),
-    (protocols.OMRON, protocols.OMRON.BANNER, {"device_with_redis": {"tags":["omron",]}}),
-    (protocols.ETHERNETIP, protocols.ETHERNETIP.BANNER, {"device_with_redis": {"tags":["ethernetip",]}}),
-    
+    (protocols.MEMCACHE, protocols.MEMCACHE.BANNER, {"device_with_memcache": {"tags":["memcache",]}}),
+    (protocols.MONGODB, protocols.MONGODB.BANNER, {"device_with_mongodb": {"tags":["mongodb",]}}),
+    (protocols.CODESYS, protocols.CODESYS.BANNER, {"device_with_codesys": {"tags":["codesys",]}}),
+    (protocols.RDP, protocols.RDP.BANNER, {"device_with_rdp": {"tags":["rdp",]}}),
+    (protocols.AMQP, protocols.AMQP.BANNER, {"device_with_amqp": {"tags":["amqp",]}}),
+    (protocols.RIAK, protocols.RIAK.BANNER, {"device_with_riak": {"tags":["riak",]}}),
+    (protocols.IKE, protocols.IKE.BANNER, {"device_with_ike": {"tags":["ike",]}}),
+    (protocols.PCWORX, protocols.PCWORX.BANNER, {"device_with_pcworx": {"tags":["pcworx",]}}),
+    (protocols.OMRON, protocols.OMRON.BANNER, {"device_with_omron": {"tags":["omron",]}}),
+    (protocols.ETHERNETIP, protocols.ETHERNETIP.BANNER, {"device_with_ethernetip": {"tags":["ethernetip",]}}),
+    (protocols.PGSQL, protocols.PGSQL.BANNER, {"device_with_pgsql": {"tags":["pgsql",]}}),
 ] 
 
 for proto, subproto, tests in PROTOCOLS:
